@@ -1,0 +1,365 @@
+@font-face {
+    font-family: IranYekanNormal;
+    src: url(fonts/IranYekanFaNum/IRANYekanWebDotinFaNum-Mediumd41d.eot) format("eot"),
+         url(fonts/IranYekanFaNum/IRANYekanWebDotinFaNum.woff2) format("woff2"),
+         url(fonts/IranYekanFaNum/IRANYekanWebDotinFaNum-Black.woff) format("woff"), 
+         url(fonts/IranYekanFaNum/IRANYekanWebDotinFaNum-Bold.ttf) format("truetype"),
+         url(/IRANYekanWebDotinFaNum-Bold.svg) format("svg");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IranYekanNormal', Arial, sans-serif;
+    direction: rtl;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080a09;
+    min-height: 100vh; /* اضافه کردن min-height */
+}
+
+.body {
+    color: white;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* اضافه کردن ارتفاع کامل */
+}
+
+.header {
+    margin-top: 3rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+    font-size: 0.7rem; /* Adjusted font-size for responsiveness */
+    line-height: 3.5;
+    overflow: hidden; /* Prevents content from overflowing */
+}
+.logo-img{
+    width: 8rem; /* Slightly increased width for better visibility on smaller screens */
+    height: 6rem;
+}
+.right-img {
+    border-radius: 50%;
+    width: 3rem; /* Slightly increased width for better visibility on smaller screens */
+    height: 3rem;
+}
+.phone{
+    font-size: 1rem;
+}
+.icon-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.under-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 12vh;
+    background-color: rgba(41, 37, 37, 0.548);
+    padding: 1rem;
+}
+
+.left-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 3.125rem;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.25rem; /* Slightly increased width for better visibility on smaller screens */
+    height: 2.25rem;
+    align-self: center; /* Centering the image vertically */
+}
+
+.img2 {
+    margin-left: auto; /* Move img2 to the left */
+    margin-right: 1rem; /* Added margin for spacing between images */
+    width: 2.5rem; /* Slightly increased width for better visibility on smaller screens */
+    height: 2.5rem;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+.inner-1{
+    width: 100%;
+
+}
+.inner {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 2rem;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .body {
+        height: 100vh; /* Make sure .body takes full height */
+        justify-content: space-between; /* Ensure elements take the full height */
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .phone{
+        font-size: 0.65rem;
+    }
+    .inner-1{
+        order: 2;
+    }
+    .inner{
+        order: 2;
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+        border: solid gray 1px;
+        border-radius: 0;
+    }
+    .logo-img{
+        width: 4.5rem; /* Slightly increased width for better visibility on smaller screens */
+        height: 3rem;
+    }
+    .header {
+        order: 3; /* Header should come after under-header */
+        margin-top: auto; /* Move header to the bottom */
+        font-size: 0.625rem;
+        padding: 0.5rem;
+        border-radius: 0 0 0 0;
+        border: solid gray 0.5px;
+    }
+
+    .under-header {
+        border-radius: 10px 10px 0 0;
+        order: 1; /* under-header should come before header */
+        margin-bottom: auto; /* Move under-header to the top */
+        margin-top: 1rem;
+    }
+
+    .iconx {
+        width: 6rem;
+        height: 2.5rem;
+    }
+
+    .img {
+        width: 1.5rem; /* Increased width for better visibility */
+        height: 1.5rem;
+    }
+
+    .img2 {
+        width: 1.5rem; /* Increased width for better visibility */
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .body {
+        height: 100vh; /* Make sure .body takes full height */
+        justify-content: space-between; /* Ensure elements take the full height */
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .phone{
+        font-size: 0.65rem;
+    }
+    .logo-img{
+        width: 4.5rem; /* Slightly increased width for better visibility on smaller screens */
+        height: 3rem;
+    }
+    .inner{
+        order: 2;
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+        border: solid gray 1px;
+        border-radius: 0;
+    }
+  
+
+    .header {
+        order: 3; /* Header should come after under-header */
+        margin-top: auto; /* Move header to the bottom */
+        font-size: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 0 0 0 0;
+        border: solid gray 0.5px;
+    }
+
+    .under-header {
+        border-radius: 10px 10px 0 0;
+        order: 1; /* under-header should come before header */
+        margin-bottom: auto; /* Move under-header to the top */
+        margin-top: 1rem;
+    }
+
+    .iconx {
+        width: 5rem;
+        height: 2rem;
+    }
+
+    .img {
+        width: 1.5rem; /* Increased width for better visibility */
+        height: 1.5rem;
+    }
+
+    .img2 {
+        width: 1.5rem; /* Increased width for better visibility */
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        height: 100vh; /* Make sure .body takes full height */
+        justify-content: space-between; /* Ensure elements take the full height */
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .phone{
+        font-size: 0.65rem;
+    }
+    .logo-img{
+        width: 4.5rem; /* Slightly increased width for better visibility on smaller screens */
+        height: 3rem;
+    }
+    .inner{
+        order: 2;
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+        border: solid gray 1px;
+        border-radius: 0;
+    }
+
+    .header {
+        order: 3; /* Header should come after under-header */
+        margin-top: auto; /* Move header to the bottom */
+        font-size: 0.45rem;
+        padding: 0.4rem;
+        border-radius: 0 0 0 0;
+        border: solid gray 0.5px;
+        border-radius: 0;
+    }
+
+    .under-header {
+        border-radius: 10px 10px 0 0;
+        order: 1; /* under-header should come before header */
+        margin-bottom: auto; /* Move under-header to the top */
+        margin-top: 1rem;
+    }
+
+    .iconx {
+        width: 4rem;
+        height: 1.75rem;
+    }
+
+    .img {
+        width: 1.5rem; /* Increased width for better visibility */
+        height: 1.5rem;
+    }
+
+    .img2 {
+        width: 1.5rem; /* Increased width for better visibility */
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .body {
+        height: 100vh; /* Make sure .body takes full height */
+        justify-content: space-between; /* Ensure elements take the full height */
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .phone{
+        font-size: 0.65rem;
+    }
+    .logo-img{
+        width: 4.5rem; /* Slightly increased width for better visibility on smaller screens */
+        height: 3rem;
+    }
+    .header {
+        order: 3; /* Header should come after under-header */
+        font-size: 0.4rem;
+        padding: 0.3rem;
+        border-radius: 0 0 0 0;
+        border: solid gray 0.5px;
+    }
+    .inner{
+        order: 2;
+        height: 80vh;
+        border-radius: 0 0 0 0;
+        padding: 0;
+        margin: 0;
+        border: solid gray 1px;
+    }
+
+    .under-header {
+        border-radius: 10px 10px 0 0;
+        order: 1; /* under-header should come before header */
+        margin-bottom: auto; /* Move under-header to the top */
+        margin-top: 1rem;
+    }
+
+    .iconx {
+        width: 3.5rem;
+        height: 1.5rem;
+    }
+
+    .img {
+        width: 1.5rem; /* Increased width for better visibility */
+        height: 1.5rem;
+    }
+
+    .img2 {
+        width: 1.5rem; /* Increased width for better visibility */
+        height: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .iconx {
+        max-width: 100%; /* تصاویر را به اندازه ماکزیمم ممکن کوچک کنید */
+        height: auto; /* ارتفاع به طور خودکار تنظیم شود */
+    }
+}
